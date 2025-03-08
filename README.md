@@ -61,4 +61,4 @@ Especially when working with tuples, it is important to prevent TS's type reduct
 * readonly typescript inputs
 * extends readonly 
 ```
-The expectType in [TSD - TypeScript Definition manager](https://github.com/DefinitelyTyped/tsd) is very useful for verifying complex validators. Example in [index.test-d.ts](https://github.com/macioa/ts-neverfalse/test/index.test-d.ts)
+The expectType in [TSD - TypeScript Definition manager](https://github.com/DefinitelyTyped/tsd) is very useful for verifying complex validators. Example in [index.test-d.ts]https://github.com/Macioa/ts-neverfalse/blob/main/test/index.test-d.ts)
