@@ -1,12 +1,13 @@
 {
   "name": "ts-neverfalse",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Automated error coalescing and aggregation to simplify advanced type evaluations in Typescript",
-  "main": "src/index.ts",
+  "main": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --dts --minify --format esm,cjs --outDir dist",
+    "build": "tsup src/* --dts --minify --format esm,cjs --outDir dist",
     "test": "jest",
-    "test:types": "tsd"
+    "test:types": "tsd",
+    "pub": "npm run build && rm -rf dist/*.js dist/*.mjs && npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,9 @@
     "url": "https://github.com/Macioa/ts-neverfalse/issues"
   },
   "homepage": "https://github.com/Macioa/ts-neverfalse#readme",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": "./dist/index.d.ts",
     "./config": "./dist/config.d.ts",
@@ -31,7 +35,7 @@
     "./interface": "./dist/interface.d.ts",
     "./utils": "./dist/utils.d.ts"
   },
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",

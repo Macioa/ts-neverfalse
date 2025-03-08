@@ -1,9 +1,13 @@
 {
     "compilerOptions": {
+      "outDir": "dist",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
       "declaration": true,
+      "declarationMap": false,
       "emitDeclarationOnly": true,
-      "strict": true,
-          "outDir": "dist"
+      "declarationDir": "dist",
+      "noEmit": false
     },
-    "include": ["src"]
+    "include": ["src/**/*"]
   }
