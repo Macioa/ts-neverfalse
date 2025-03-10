@@ -1,6 +1,6 @@
 # ts-neverfalse
 
-Automated error coalescing and aggregation to simplify advanced type evaluations in Typescript. It is primarliy intended for evaluations on functions and tuples
+Automated error coalescing and aggregation to simplify advanced type evaluations in Typescript. It is primarily intended for evaluations on functions and tuples
 
 ![Structured Error](ErrorExample2.webp)
 
@@ -16,14 +16,14 @@ type validator<T> = T extends condition
   : FALSE<T, "T does not meet condition">;
 ```
 
-Use NEVER for redundant evaluations and other logical issues. NEVER errors and FALSE errors are both aggregated but FALSE supercedes NEVER, allowing only the most relevant issues to be propogated through typescript evaluations.
+Use NEVER for redundant evaluations and other logical issues. NEVER errors and FALSE errors are both aggregated but FALSE supersedes NEVER, allowing only the most relevant issues to be propagated through typescript evaluations.
 
 Use VALIDATE_ALL to join multiple validations:
 
 ```ts
 type ValidateTuple<T> = VALIDATE_ALL<[ValidateA<T>, ValidateB<T>]>;
 // concatenates errors from A and B into a single error object,
-// representing all defecincies for T
+// representing all deficiencies for T
 ```
 
 Or chain validations (Often necessary for recursive calls):
@@ -38,7 +38,7 @@ type ValidateAll<T> = ValidateA<T> extends infer NewT
     : FALSE<NewT, "T does not meet condition B">
   : NEVER<T, "Could not evaluate cond A">;
 // concatenates errors from A and B into a single error object,
-// representing all defecincies for T. Never message is ignored.
+// representing all deficiencies for T. Never message is ignored.
 ```
 
 ### install:
