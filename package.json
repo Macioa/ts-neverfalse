@@ -1,6 +1,6 @@
 {
   "name": "ts-neverfalse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Automated error coalescing and aggregation to simplify advanced type evaluations in Typescript",
   "main": "dist/index.d.ts",
   "scripts": {
