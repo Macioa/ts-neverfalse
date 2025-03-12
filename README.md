@@ -1,6 +1,6 @@
 # ts-neverfalse
 
-Automated error coalescing and aggregation to simplify advanced type evaluations in Typescript. It is primarily intended for evaluations on functions and tuples
+Automated error aggregation and coalescence to streamline advanced TypeScript evaluations.
 
 ![Structured Error](ErrorExample2.webp)
 
@@ -84,4 +84,4 @@ Especially when working with tuples, it is important to prevent TS's type reduct
 * unknown[] (in regards to type compression)
 ```
 
-The expectType in [TSD - TypeScript Definition manager](https://github.com/DefinitelyTyped/tsd) is very useful for verifying complex validators. Example in [index.test-d.ts]https://github.com/Macioa/ts-neverfalse/blob/main/test/index.test-d.ts)
+The `expectType` in [TSD - TypeScript Definition manager](https://github.com/DefinitelyTyped/tsd) is very useful for verifying complex validators. Example in [`index.test-d.ts`](https://github.com/Macioa/ts-neverfalse/blob/main/test/index.test-d.ts).
